@@ -1,0 +1,39 @@
+JAVA CLASS 8 QUIZ
+
+Ques 1 - True , as the interface acts and compiled like a normal class.
+
+
+Ques 2 - The variable i cannot be private because all the variables defined inside Interfaces are static and they must be public 
+           so every other derived classes could access and use its value.
+		   
+		   
+Ques 3 - Yes , any number of interfaces can be implemented in a class .
+
+
+Ques 4 - As the function methodX() is not set to be public , so the visibility of the inherited function is reduced from the interface. 
+           This makes the compile time error.
+		   
+
+Ques 5 - 
+
+
+Ques 6 - No , we cannot use keyword " abstract " in any of these cases. 
+            1)   For Constructor , the visibility could only be public or protected and the constructor must be initialized at that current time 
+			      and must have the body.
+            2)   For Instance Initialization block , this block is executed even before the constructor so its 
+			         body must be initialized at current time.  
+            3)   Same for static block , at the time of object creation , this block executes . 
+			
+
+Ques 7 -  It is because the abstract functions don't have their initialization in same class only. They are empty and they are initialized in 
+            the classes which inherits that abstract class. So it cannot be final as these functions are dynamic and they can be modified. 
+			
+
+Ques 8 - Yes, with the help of an inherited class of that abstract class , it can be done.
+          By using this statement - 
+             
+			 Hello a = new Hello2();
+                        
+             where Hello is the abstract class and Hello2 is the derived class.
+
+           But without making inherited class , it cannot be possible as abstract classes don't create objects.			 
